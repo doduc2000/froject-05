@@ -1,5 +1,15 @@
 <div class="container">
     <div class="header__inner">
+        <!-- toggle-menu -->
+
+        <button class="js-toggle" toggle-target="#nav">
+            <img
+                src="./assets/icon/menu.svg"
+                alt=""
+                class="toggle__menu icon d-none d-lg-block"
+            />
+        </button>
+
         <!-- logo -->
 
         <a href="#!"
@@ -8,7 +18,7 @@
 
         <!-- nav -->
 
-        <div class="nav">
+        <div id="nav" class="nav">
             <ul class="nav__list d-flex">
                 <li class="nav__item">
                     <a class="nav__link" href="#!">Tất cả sản phẩm </a>
@@ -55,6 +65,9 @@
                 </li>
             </ul>
         </div>
+
+        <!-- overlay -->
+        <div class="overlay"></div>
 
         <!-- action -->
 
