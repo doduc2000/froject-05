@@ -1,5 +1,6 @@
 *, ::after, ::before{
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html{
@@ -9,4 +10,40 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+}
+
+.icon{
+    filter: var(--icon);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+button, input, textarea, select{
+    border: none; 
+    outline: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+
+button{
+    user-select: none;
+    cursor: pointer;
+}
+
+i, em{
+    font-style: italic;
+}
+
+b, strong{
+    font-weight: 600;
+}
+
+u{
+    text-decoration: underline;
 }

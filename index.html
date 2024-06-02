@@ -34,6 +34,9 @@
         <!-- scrips -->
 
         <script src="./assets/js/scrip.js"></script>
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
     </head>
     <body>
         <header id="header"></header>
@@ -42,7 +45,7 @@
         </script>
 
         <main>
-            <div class="container">fsadfdsa</div>
+            <div class="container"></div>
         </main>
 
         <footer id="#footer"></footer>
@@ -50,5 +53,29 @@
         <script>
             load("#footer", "./template/footer.html");
         </script>
+
+        <!-- modal -->
+
+        <div id="modal-header" class="modal">
+            <div class="modal__inner">
+                <div class="modal__search-header">
+                    <input
+                        type="text"
+                        class="modal__search-input"
+                        name=""
+                        id=""
+                        placeholder="Nhập sản phẩm bạn muốn tìm kiếm"
+                    />
+
+                    <div class="modal__search-icon-wrap">
+                        <img
+                            src="./assets/icon/search.svg"
+                            alt=""
+                            class="modal__search-icon icon"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
