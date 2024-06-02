@@ -18,7 +18,14 @@
 
         <!-- nav -->
 
-        <div id="nav" class="nav">
+        <div id="nav" class="nav hide">
+            <div
+                class="nav__close js-toggle d-none d-lg-block"
+                toggle-target="#nav"
+            >
+                &times;
+            </div>
+
             <ul class="nav__list d-flex">
                 <li class="nav__item">
                     <a class="nav__link" href="#!">Tất cả sản phẩm </a>
@@ -67,13 +74,13 @@
         </div>
 
         <!-- overlay -->
-        <div class="overlay"></div>
+        <div class="overlay js-toggle" toggle-target="#nav"></div>
 
         <!-- action -->
 
         <div class="header__action">
             <button
-                class="header__action-icon-wrap js-toggle"
+                class="header__action-icon-wrap js-toggle header__action-btn"
                 toggle-target="#modal-header"
             >
                 <img
