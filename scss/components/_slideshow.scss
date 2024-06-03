@@ -1,0 +1,24 @@
+.slideshow {
+
+    &__list{
+        display: flex;
+        overflow: hidden;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        width: 100%;
+        padding-top: 50%;
+        position: relative;
+    }
+
+    &__img{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
