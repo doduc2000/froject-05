@@ -1,0 +1,132 @@
+@use "../abstracts";
+
+.footer {
+    border-top: 1px solid var(--footer-border-color);
+
+    &__separate{
+        height: 1px;
+        background-color: var(--footer-border-color);
+    }
+
+    &__column:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__logo{
+        width: 156px;
+        height: 56px;
+
+        @include abstracts.screen(md){
+            margin-bottom: 30px;
+        }
+    }
+
+    &__text{
+        font-weight: 600;
+        color: var(--footer-text-color);
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    &__mail{
+        color: var( --footer-text-mail-color);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    &__inner{
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+
+        @include abstracts.screen(md){
+            grid-template-columns: 1fr;
+        }    
+    }
+
+    &__heading{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+
+        @include abstracts.screen(md){
+            margin-bottom: 10px;
+        }
+    }
+
+    &__link{
+        display: block;
+        color: var( --footer-text-mail-color);
+        padding: 5px 0;
+
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    }
+    &__bottom{
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        &-desc{
+            text-align: center;
+        }
+    }
+
+    &__icon{
+        width: 16px;
+        height: 16px;
+
+        &-row{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &-wrap{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 5px;
+            transition: all 0.3s;
+
+            &:hover{
+                transform: translateY(-5px);
+            }
+           
+            &:first-child{
+                background-color: #782ac0;
+            }
+
+            &:nth-child(2){
+                background-color: #121212;
+            }
+
+            &:nth-child(3){
+                background-color: #dda6ee;
+            }
+
+            &:nth-child(4){
+                background-color: #aa660d;
+            }
+
+            &:last-child{
+                background-color: #643572 ;
+            }
+        }
+    }
+
+
+}

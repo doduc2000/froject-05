@@ -1278,9 +1278,9 @@ u {
     position: fixed;
     margin: 0;
     inset: 0 50% 0 0;
-    background-color: #fff;
+    background-color: var(--nav-bg-color);
     border-radius: 0 20px 20px 0;
-    box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
+    box-shadow: 0px 40px 90px 20px var(--nav-shadow-color);
     transform: translateX(-100%);
     transition: all 0.5s;
   }
@@ -1336,11 +1336,11 @@ u {
 .nav__item-list {
   position: absolute;
   z-index: 1;
-  background-color: #fff;
+  background-color: var(--nav-list-bg-color);
   top: 50px;
   left: 10px;
-  border: 1px solid #eee;
-  box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
+  border: 1px solid var(--nav-list-border-color);
+  box-shadow: 0px 40px 90px 20px var(--nav-list-shadow-color);
   border-radius: 10px;
   padding: 15px;
   width: 200px;
@@ -1389,7 +1389,7 @@ u {
 @media (max-width: 991.98px) {
   .nav__link:hover, .nav__item-link:hover {
     text-decoration: none;
-    background-color: #eee;
+    background-color: var(--nav-link-hover-bg-color);
   }
 }
 .nav__item:last-child .nav__link {
@@ -1404,6 +1404,119 @@ u {
 .toggle__menu {
   width: 24px;
   height: 24px;
+}
+
+.footer {
+  border-top: 1px solid var(--footer-border-color);
+}
+.footer__separate {
+  height: 1px;
+  background-color: var(--footer-border-color);
+}
+.footer__column:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer__logo {
+  width: 156px;
+  height: 56px;
+}
+@media (max-width: 767.98px) {
+  .footer__logo {
+    margin-bottom: 30px;
+  }
+}
+.footer__text {
+  font-weight: 600;
+  color: var(--footer-text-color);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.footer__mail {
+  color: var(--footer-text-mail-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer__inner {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 767.98px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+}
+.footer__heading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+@media (max-width: 767.98px) {
+  .footer__heading {
+    margin-bottom: 10px;
+  }
+}
+.footer__link {
+  display: block;
+  color: var(--footer-text-mail-color);
+  padding: 5px 0;
+}
+.footer__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer__bottom {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.footer__bottom-desc {
+  text-align: center;
+}
+.footer__icon {
+  width: 16px;
+  height: 16px;
+}
+.footer__icon-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.footer__icon-wrap:hover {
+  transform: translateY(-5px);
+}
+.footer__icon-wrap:first-child {
+  background-color: #782ac0;
+}
+.footer__icon-wrap:nth-child(2) {
+  background-color: #121212;
+}
+.footer__icon-wrap:nth-child(3) {
+  background-color: #dda6ee;
+}
+.footer__icon-wrap:nth-child(4) {
+  background-color: #aa660d;
+}
+.footer__icon-wrap:last-child {
+  background-color: #643572;
 }
 
 .modal {
@@ -1574,11 +1687,11 @@ u {
 .product__item {
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--border-pro-color);
   height: 100%;
 }
 .product__item:hover {
-  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.4);
+  box-shadow: 0px 20px 60px 10px var(--pro-item-shadow-color);
 }
 .product__item:hover .product__item-img {
   transform: scale(1.05);
@@ -1610,7 +1723,7 @@ u {
   font-weight: 700;
   font-size: 1.8rem;
   margin-top: 10px;
-  color: #535353;
+  color: var(--pro-price-color);
 }
 .product__bottom {
   display: flex;
@@ -1623,6 +1736,18 @@ html {
   --text-color: #1A162E;
   --text-desc-color: #959595;
   --icon: brightness(0) saturate(100%) invert(9%) sepia(12%) saturate(2738%) hue-rotate(210deg) brightness(97%) contrast(98%);
+  --nav-bg-color: #fff;
+  --nav-shadow-color: rgba(200, 200, 200, 0.4);
+  --nav-list-bg-color: #fff;
+  --nav-list-border-color: #eee;
+  --nav-list-shadow-color: rgba(200, 200, 200, 0.4);
+  --nav-link-hover-bg-color: #eee;
+  --border-pro-color: #eee;
+  --pro-item-shadow-color: rgba(237, 237, 246, 0.4);
+  --pro-price-color: #535353;
+  --footer-border-color: #eee;
+  --footer-text-color: #4d4d4d;
+  --footer-text-mail-color: #787878;
 }
 
 html.dark {

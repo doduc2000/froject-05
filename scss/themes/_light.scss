@@ -2,4 +2,25 @@ html{
     --text-color: #1A162E;
     --text-desc-color: #959595;
     --icon: brightness(0) saturate(100%) invert(9%) sepia(12%) saturate(2738%) hue-rotate(210deg) brightness(97%) contrast(98%);
+
+// header
+
+    --nav-bg-color: #fff;
+    --nav-shadow-color: rgba(200, 200, 200, 0.4);
+    --nav-list-bg-color: #fff;
+    --nav-list-border-color: #eee;
+    --nav-list-shadow-color: rgba(200, 200, 200, 0.4);
+    --nav-link-hover-bg-color: #eee;
+
+// product
+
+    --border-pro-color: #eee;
+    --pro-item-shadow-color: rgba(237, 237, 246, 0.4);
+    --pro-price-color: #535353;
+
+// footer
+
+    --footer-border-color: #eee;
+    --footer-text-color: #4d4d4d;
+    --footer-text-mail-color: #787878;
 }

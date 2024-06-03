@@ -45,9 +45,9 @@
         position: fixed;
         margin: 0;
         inset: 0 50% 0 0;
-        background-color: #fff;
+        background-color: var(--nav-bg-color);
         border-radius: 0 20px 20px 0;
-        box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
+        box-shadow: 0px 40px 90px 20px var(--nav-shadow-color);
         transform: translateX(-100%);
         transition: all 0.5s;
     }
@@ -107,11 +107,11 @@
         &-list{
             position: absolute;
             z-index: 1;
-            background-color: #fff;
+            background-color: var(--nav-list-bg-color);
             top: 50px;
             left: 10px;
-            border: 1px solid #eee;
-            box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
+            border: 1px solid var(--nav-list-border-color);
+            box-shadow: 0px 40px 90px 20px var(--nav-list-shadow-color);
             border-radius: 10px;
             padding: 15px;
             width: 200px;
@@ -162,7 +162,7 @@
 
             @include abstracts.screen(lg){
                 text-decoration: none;
-                background-color: #eee;
+                background-color: var( --nav-link-hover-bg-color);
             }
         }
         
