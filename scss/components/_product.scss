@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .product{
     margin-bottom: 80px;
 
@@ -6,11 +8,27 @@
     }
 
     &__item{
+        position: relative;
         padding: 15px;
         border-radius: 10px;
         border: 1px solid var(--border-pro-color);
         height: 100%;
-       
+
+        &-sale-banner, &-out-of-stock-banner{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgb(238, 51, 51);
+            border-radius: 0 0 0 5px;
+            color: #fff;
+            display: none;
+        }
+
+        &-sale &-sale-banner, &-out-of-stock &-out-of-stock-banner{
+            display: block;
+        }
+
         &:hover{
             box-shadow: 0px 20px 60px 10px var(--pro-item-shadow-color);
         }
@@ -60,5 +78,96 @@
         align-items: center;
         justify-content: center;
         margin-top: 50px;
+        gap: 20px;
+
+        &-icon{
+            width: 12px;
+            height: 12px;
+            rotate: -90deg;
+        }
+
+        &-number:hover{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        &-number-active{
+            background-color: #eee;
+            padding: 4px 6px;
+            border: 1px solid #bba1a1;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
+
+    &__inner{
+        padding: 50px 0;
+    }
+
+    &__action{
+        position: relative;
+
+        margin: 30px 0 40px;
+
+        &, &-left, &-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @include abstracts.screen(lg){
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        @include abstracts.screen(sm){
+            flex-direction: row;
+        }
+
+        &-left{
+            gap: 20px;
+
+            @include abstracts.screen(sm){
+                width: 100%;
+            }
+        }
+
+        &-item{
+            gap: 10px;
+            color: #696c69;
+            padding: 10px 15px;
+
+            &-none-lg{
+                @include abstracts.screen(lg){
+                    display: none;
+                }
+            }
+        }
+
+        &-icon{
+            width: 12px;
+            height: 12px;    
+        }
+
+        &-show-sm, &-btn-wrap:first-child{
+            display: none;
+
+            @include abstracts.screen(lg){
+                display: flex;
+            }
+        } 
+        
+        &-right{
+            @include abstracts.screen(sm){
+                display: none;
+            }
+        }
+
+      
+         
+     }
+   
 }

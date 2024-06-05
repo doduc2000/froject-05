@@ -11,4 +11,11 @@
             color: #fff;
         }
     }
+
+    &__text{
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    }
 }

@@ -1,0 +1,25 @@
+.form{
+
+
+    &__row{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__group{
+        border: 1px solid #eee;
+        height: 40px;
+    }
+
+    &__input{
+        padding: 10px;
+    }
+
+    &__footer{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: flex-end;
+    }
+}
