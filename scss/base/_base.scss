@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 *, ::after, ::before{
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
@@ -47,3 +49,46 @@ b, strong{
 u{
     text-decoration: underline;
 }
+
+.home{
+
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0 80px;
+    }
+
+    &__desc, &__heading{
+        line-height: 1.5;
+    }
+
+    &__heading{
+        font-size: 3.2rem;
+        font-weight: 500;
+    
+        @include abstracts.screen(sm){
+            font-size: 2.2rem;
+        }
+    }
+    
+
+    &__desc{
+        font-size: 1.8rem;
+        width: 620px;
+        text-align: center;
+        color: var(--text-desc-color);
+
+        @include abstracts.screen(md){
+            width: 100%;
+        }
+
+        @include abstracts.screen(sm){
+            font-size: 1.6rem;
+        }
+
+    }
+}
+
