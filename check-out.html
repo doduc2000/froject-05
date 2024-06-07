@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thanh toán đơn hàng | MD Perfumer</title>
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- font -->
+
+        <link rel="stylesheet" href="./assets/lato/stylesheet.css" />
+
+        <!-- scrips -->
+
+        <script src="./assets/js/scrip.js"></script>
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+
+        <main>
+            <div class="container">
+                <div class="checkout">
+                    <div class="row gy-lg-4">
+                        <div class="col-8 col-lg-12">
+                            <!-- checkout-left -->
+                            <div class="checkout__left">
+                                <div class="row">
+                                    <!-- checkout-form -->
+                                    <div class="col-6 col-md-12">
+                                        <div class="checkout__left-form">
+                                            <div class="checkout__row">
+                                                <p class="checkout__desc">
+                                                    Thông tin nhận hàng
+                                                </p>
+                                                <a
+                                                    class="checkout__row-link"
+                                                    href="./sign-in.html"
+                                                >
+                                                    <img
+                                                        class="checkout__left-icon"
+                                                        src="./assets/icon/people.svg"
+                                                        alt=""
+                                                    />
+
+                                                    <span>Đăng nhập</span>
+                                                </a>
+                                            </div>
+
+                                            <!-- form -->
+                                            <form action="" class="form">
+                                                <!-- form__group-1 -->
+
+                                                <label
+                                                    class="form__lable"
+                                                    for="email"
+                                                    >Email</label
+                                                >
+                                                <div class="form__group">
+                                                    <input
+                                                        type="email"
+                                                        id="email"
+                                                        class="form__input"
+                                                        placeholder="Email"
+                                                    />
+                                                </div>
+
+                                                <!-- form__group-2 -->
+                                                <label
+                                                    class="form__lable"
+                                                    for="name"
+                                                    >Họ và tên</label
+                                                >
+                                                <div class="form__group">
+                                                    <input
+                                                        type="text"
+                                                        id="name"
+                                                        class="form__input"
+                                                        placeholder="Họ và Tên"
+                                                    />
+                                                </div>
+                                                <!-- form__group-3 -->
+
+                                                <label
+                                                    class="form__lable"
+                                                    for="tel"
+                                                    >Số điện thoại</label
+                                                >
+                                                <div class="form__group">
+                                                    <input
+                                                        type="tel"
+                                                        id="tel"
+                                                        class="form__input"
+                                                        placeholder="Số điện thoại"
+                                                    />
+                                                </div>
+
+                                                <!-- form__group-4 -->
+
+                                                <label
+                                                    class="form__lable"
+                                                    for="city"
+                                                    >Thành phố</label
+                                                >
+                                                <div class="form__group">
+                                                    <input
+                                                        type="text"
+                                                        id="city"
+                                                        class="form__input"
+                                                        placeholder="Thành Phố"
+                                                    />
+
+                                                    <div
+                                                        class="form__select-dialog"
+                                                    >
+                                                        <div
+                                                            class="form__select-search"
+                                                        >
+                                                            <input
+                                                                type="text"
+                                                                class="form__input"
+                                                            />
+
+                                                            <div
+                                                                class="form__select-icon-wrap"
+                                                            >
+                                                                <img
+                                                                    src="./assets/icon/search.svg"
+                                                                    alt=""
+                                                                    class="form__select-icon"
+                                                                />
+                                                            </div>
+                                                        </div>
+
+                                                        <ul
+                                                            class="form__select-list"
+                                                        >
+                                                            <li
+                                                                class="form__select-item-active"
+                                                            >
+                                                                Hà Nội
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Thái Bình
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Hưng yên
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Hải Dương
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Hải Phòng
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Hồ Chí Minh
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Long An
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Đà Nẵng
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Lào Cai
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Ninh Bình
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Lai Châu
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Đà Nẵng
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Lào Cai
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Ninh Bình
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Lai Châu
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Đà Nẵng
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Lào Cai
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Ninh Bình
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Lai Châu
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Đà Nẵng
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Lào Cai
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Ninh Bình
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Lai Châu
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Đà Nẵng
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Lào Cai
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Ninh Bình
+                                                            </li>
+                                                            <li
+                                                                class="form__select-item"
+                                                            >
+                                                                Lai Châu
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- form__group-5 -->
+
+                                                <label
+                                                    class="form__lable"
+                                                    for="town"
+                                                    >Xã</label
+                                                >
+                                                <div class="form__group">
+                                                    <input
+                                                        id="town"
+                                                        type="text"
+                                                        class="form__input"
+                                                        placeholder="Xã"
+                                                    />
+                                                </div>
+
+                                                <!-- form__group-6 -->
+
+                                                <label
+                                                    class="form__lable"
+                                                    for="address"
+                                                    >Địa chỉ (ghi rõ thôn
+                                                    xóm)</label
+                                                >
+                                                <div class="form__group">
+                                                    <input
+                                                        type="text"
+                                                        id="address"
+                                                        class="form__input"
+                                                        placeholder="Địa chỉ (ghi rõ thôn/xóm)"
+                                                    />
+                                                </div>
+
+                                                <!-- form__group-7 -->
+                                                <label
+                                                    class="form__lable"
+                                                    for="note"
+                                                    >Ghi chú</label
+                                                >
+                                                <div class="form__group">
+                                                    <textarea
+                                                        class="form__input"
+                                                        name=""
+                                                        id="note"
+                                                        placeholder="Ghi chú(tùy chọn)"
+                                                    ></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <!-- checkout-transport -->
+                                    <div class="col-6 col-md-12">
+                                        <div class="checkout__transport">
+                                            <div class="checkout__row">
+                                                <p class="checkout__desc">
+                                                    Vận chuyển
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="checkout__transport-row"
+                                            >
+                                                <div
+                                                    class="checkout__transport-row-left"
+                                                >
+                                                    <img
+                                                        src="./assets/icon/check.svg"
+                                                        alt=""
+                                                        class="checkout__transport-icon"
+                                                    />
+                                                    <p
+                                                        class="checkout__transport-desc"
+                                                    >
+                                                        Freeship cho đơn trên
+                                                        750.000VNĐ
+                                                    </p>
+                                                </div>
+
+                                                <div
+                                                    class="checkout__transport-row-right"
+                                                >
+                                                    <p
+                                                        class="checkout__transport-desc"
+                                                    >
+                                                        Miễn Phí
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="checkout__row">
+                                                <p class="checkout__desc">
+                                                    Thanh toán
+                                                </p>
+                                            </div>
+
+                                            <!-- checkout__pay-row-wrap -->
+                                            <div class="checkout__pay-row-wrap">
+                                                <!-- checkout__transport-row-1 -->
+                                                <div class="checkout__pay-row">
+                                                    <label
+                                                        class="checkout__transport-row-left"
+                                                    >
+                                                        <input
+                                                            type="radio"
+                                                            name="pay"
+                                                            class="form__input-radio"
+                                                        />
+                                                        <p
+                                                            class="checkout__transport-desc"
+                                                        >
+                                                            Thanh toán khi giao
+                                                            hàng (COD)
+                                                        </p>
+                                                    </label>
+
+                                                    <div
+                                                        class="checkout__transport-row-right"
+                                                    >
+                                                        <img
+                                                            src="./assets/icon/cash.svg"
+                                                            alt=""
+                                                            class="checkout__transport-img"
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <!-- checkout__transport-row-2 -->
+                                                <div class="checkout__pay-row">
+                                                    <label
+                                                        class="checkout__transport-row-left"
+                                                    >
+                                                        <input
+                                                            name="pay"
+                                                            type="radio"
+                                                            class="form__input-radio"
+                                                        />
+                                                        <p
+                                                            class="checkout__transport-desc"
+                                                        >
+                                                            Thanh toán qua Ví
+                                                            điện tử MoMo
+                                                        </p>
+                                                    </label>
+
+                                                    <div
+                                                        class="checkout__transport-row-right"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/pay/momo.webp"
+                                                            alt=""
+                                                            class="checkout__transport-img"
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <!-- checkout__transport-row-3 -->
+                                                <div class="checkout__pay-row">
+                                                    <label
+                                                        class="checkout__transport-row-left"
+                                                    >
+                                                        <input
+                                                            name="pay"
+                                                            type="radio"
+                                                            class="form__input-radio"
+                                                        />
+                                                        <p
+                                                            class="checkout__transport-desc"
+                                                        >
+                                                            Thanh toán qua
+                                                            VNPAY-QR
+                                                        </p>
+                                                    </label>
+
+                                                    <div
+                                                        class="checkout__transport-row-right"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/pay/vnpay.png"
+                                                            alt=""
+                                                            class="checkout__transport-img"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-lg-12">
+                            <!-- checkout-right -->
+                            <div class="checkout__right">
+                                <div class="checkout__row">
+                                    <p class="checkout__desc">
+                                        Đơn hàng (1 sản phẩm)
+                                    </p>
+                                </div>
+
+                                <div class="checkout__transport-row">
+                                    <div class="checkout__transport-row-left">
+                                        <figure
+                                            class="checkout__transport-thumb-wrap"
+                                        >
+                                            <img
+                                                src="./assets/img/product/product-page/nuoc-hoa-YSL-Y-EDP-nam-NHY7-13.jpg"
+                                                alt=""
+                                                class="checkout__transport-thumb"
+                                            />
+
+                                            <span
+                                                class="checkout__transport-thumb-quantity"
+                                                >1</span
+                                            >
+                                        </figure>
+
+                                        <div
+                                            class="checkout__product-name-wrap"
+                                        >
+                                            <p class="checkout__transport-desc">
+                                                Serge Lutens - La Fille de
+                                                Berlin - Edp
+                                            </p>
+                                            <p class="checkout__transport-desc">
+                                                100ml
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="checkout__transport-row-right">
+                                        <p>2.850.000₫</p>
+                                    </div>
+                                </div>
+
+                                <form class="form">
+                                    <div class="form__row checkout__gift-row">
+                                        <div class="form__group">
+                                            <input
+                                                type="text"
+                                                class="form__input"
+                                                placeholder="Nhập mã giảm giá"
+                                            />
+                                        </div>
+
+                                        <button
+                                            class="btn btn__wrap checkout__btn"
+                                        >
+                                            Áp dụng
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <div class="checkout__separate"></div>
+
+                                <div class="checkout__row">
+                                    <span class="checkout__transport-desc"
+                                        >Tạm Tính</span
+                                    >
+                                    <span class="checkout__transport-desc"
+                                        >2.888.888đ</span
+                                    >
+                                </div>
+
+                                <div class="checkout__row">
+                                    <span class="checkout__transport-desc"
+                                        >Phí vận chuyển</span
+                                    >
+                                    <span class="checkout__transport-desc"
+                                        >Miễn phí</span
+                                    >
+                                </div>
+
+                                <div class="checkout__separate"></div>
+
+                                <div class="checkout__row">
+                                    <span class="checkout__transport-desc"
+                                        >Tổng cộng</span
+                                    >
+                                    <span class="checkout__transport-desc-big"
+                                        >2.850.000₫</span
+                                    >
+                                </div>
+
+                                <div class="checkout__row checkout__row-action">
+                                    <div class="checkout__row-left">
+                                        <a
+                                            href="./favorite.html"
+                                            class="checkout__transport-desc-wrap"
+                                        >
+                                            <img
+                                                src="./assets/icon/arow-down.svg"
+                                                alt=""
+                                                class="checkout__row-back-icon"
+                                            />
+
+                                            <span> Quay về giỏ hàng</span>
+                                        </a>
+                                    </div>
+
+                                    <button class="btn btn__wrap">
+                                        Đặt Hàng
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+
+        <!-- modal -->
+
+        <div id="modal-header" class="modal hide">
+            <div class="modal__inner">
+                <div class="modal__search-header">
+                    <input
+                        type="text"
+                        class="modal__search-input"
+                        name=""
+                        id=""
+                        placeholder="Nhập sản phẩm bạn muốn tìm kiếm..."
+                    />
+
+                    <div class="modal__search-icon-wrap">
+                        <img
+                            src="./assets/icon/search.svg"
+                            alt=""
+                            class="modal__search-icon icon"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay js-toggle" toggle-target="#modal-header"></div>
+        </div>
+    </body>
+</html>
