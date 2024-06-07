@@ -2203,30 +2203,6 @@ u {
   margin-top: 10px;
   color: var(--pro-price-color);
 }
-.product__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  gap: 20px;
-}
-.product__bottom-icon {
-  width: 12px;
-  height: 12px;
-  rotate: -90deg;
-}
-.product__bottom-number:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.product__bottom-number-active {
-  background-color: var(--product-number-item-bg-color);
-  padding: 4px 6px;
-  border: 1px solid var(--product-number-item--border-color);
-}
-.product__bottom-number-active:hover {
-  text-decoration: none;
-}
 .product__inner {
   padding: 50px 0;
 }
