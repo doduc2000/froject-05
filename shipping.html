@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Giỏ Hàng Của Bạn | MD Perfumer</title>
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- font -->
+
+        <link rel="stylesheet" href="./assets/lato/stylesheet.css" />
+
+        <!-- scrips -->
+
+        <script src="./assets/js/scrip.js"></script>
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+
+        <main>
+            <div class="container">
+                <div class="shipping__inner">
+                    <!-- <p class="shipping__text">Giỏ của bạn đang trống</p> -->
+
+                    <!-- shipping-top -->
+                    <div class="shipping__top">
+                        <h1 class="home__heading">Giỏ Hàng Của Bạn</h1>
+                        <a href="./product-all.html" class="shipping__top-link"
+                            >Tiếp tục mua sắm</a
+                        >
+                    </div>
+
+                    <!-- shipping-body -->
+                    <div class="shipping__body">
+                        <!-- shipping__body-top -->
+                        <div class="shipping__body-top">
+                            <div class="row">
+                                <div class="col col-8 col-lg-6">
+                                    <div class="shipping__body-top-item">
+                                        <p class="shipping__body-top-title">
+                                            SẢN PHẨM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col col-2 col-lg-3 d-md-none">
+                                    <div class="shipping__body-top-item">
+                                        <p class="shipping__body-top-title">
+                                            SỐ LƯỢNG
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col col-2 col-lg-3 col-md-6">
+                                    <div class="shipping__body-top-item">
+                                        <p
+                                            class="shipping__body-top-title shipping__title-right"
+                                        >
+                                            TỔNG CỘNG
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- shipping__body-list -->
+                        <div class="shipping__list">
+                            <!-- item-1 -->
+                            <div class="shipping__list-item">
+                                <div class="row gy-md-4">
+                                    <div class="col col-8 col-lg-6 col-md-9">
+                                        <div class="shipping__list-item-left">
+                                            <figure class="shipping__img-wrap">
+                                                <img
+                                                    src="./assets/img/product/product-page/nuoc-hoa-YSL-Y-EDP-nam-NHY7-13.jpg"
+                                                    alt=""
+                                                    class="shipping__img"
+                                                />
+                                            </figure>
+
+                                            <div
+                                                class="shipping__product-name-wrap"
+                                            >
+                                                <a href="./product.html">
+                                                    <h1
+                                                        class="shipping__product-name"
+                                                    >
+                                                        CACHAREL - Amor Amor -
+                                                        Edp 100ml
+                                                    </h1>
+                                                </a>
+
+                                                <span
+                                                    class="shipping__product-price"
+                                                    >2.000.000</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-2 col-lg-3 col-md-6">
+                                        <div
+                                            class="shipping__list-item-quantity"
+                                        >
+                                            <div class="shipping__btn-wrap">
+                                                <button
+                                                    class="shipping__btn-quantity"
+                                                >
+                                                    <img
+                                                        src="./assets/icon/minus.svg"
+                                                        alt=""
+                                                        class="shipping__btn-quantity-icon"
+                                                    />
+                                                </button>
+
+                                                <span>1</span>
+
+                                                <button
+                                                    class="shipping__btn-quantity"
+                                                >
+                                                    <img
+                                                        src="./assets/icon/plus.svg"
+                                                        alt=""
+                                                        class="shipping__btn-quantity-icon"
+                                                    />
+                                                </button>
+                                            </div>
+
+                                            <button
+                                                class="shipping__btn-quantity"
+                                            >
+                                                <img
+                                                    src="./assets/icon/delete.svg"
+                                                    alt=""
+                                                    class="shipping__btn-quantity-icon"
+                                                />
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-2 col-lg-3 col-md-6">
+                                        <div
+                                            class="shipping__product-total-price"
+                                        >
+                                            <span>2.000.000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- shipping-bottom -->
+
+                    <div class="shipping__bottom">
+                        <div class="shipping__bottom-row">
+                            <span>Tổng số ước tính:</span>
+
+                            <span class="shipping__bottom-price"
+                                >2.000.000</span
+                            >
+                        </div>
+                        <p class="shipping__bottom-desc">
+                            Giá đã bao gồm thuế - chi phí vận chuyển được tính
+                            khi thanh toán Tiến hành thanh toán
+                        </p>
+                        <a href="./check-out.html" class="btn btn__wrap"
+                            >Tiến hành thanh toán</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+
+        <!-- modal -->
+
+        <div id="modal-header" class="modal hide">
+            <div class="modal__inner">
+                <div class="modal__search-header">
+                    <input
+                        type="text"
+                        class="modal__search-input"
+                        name=""
+                        id=""
+                        placeholder="Nhập sản phẩm bạn muốn tìm kiếm..."
+                    />
+
+                    <div class="modal__search-icon-wrap">
+                        <img
+                            src="./assets/icon/search.svg"
+                            alt=""
+                            class="modal__search-icon icon"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay js-toggle" toggle-target="#modal-header"></div>
+        </div>
+    </body>
+</html>

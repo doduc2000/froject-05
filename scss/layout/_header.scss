@@ -30,6 +30,29 @@
 
             &-wrap{
                 padding: 15px;
+                position: relative;
+            }
+        }
+
+        &-icon-quantity{
+            display: none;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            color: #fff;
+            font-size: 1.2rem;
+
+            &::after{
+                position: absolute;
+                z-index: -1;
+                top: -1px;
+                left: -5px;
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #000;
+
             }
         }
     }
