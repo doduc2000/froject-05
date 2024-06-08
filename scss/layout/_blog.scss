@@ -113,4 +113,15 @@
             overflow: hidden;
         }
     }
+
+    &__content{
+
+        &-heading{
+            margin-bottom: 30px;
+        }
+    }
+
+    &__text-content{
+        margin-top: 20px;
+    }
 }

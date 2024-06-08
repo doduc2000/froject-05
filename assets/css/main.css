@@ -1947,6 +1947,12 @@ u {
   padding-top: 100%;
   overflow: hidden;
 }
+.blog__content-heading {
+  margin-bottom: 30px;
+}
+.blog__text-content {
+  margin-top: 20px;
+}
 
 .modal {
   position: fixed;
@@ -2025,7 +2031,7 @@ u {
   line-height: 1.6;
   color: var(--text-color);
 }
-.text__content h1, .text__content h2, .text__content h3, .text__content h4, .text__content h5, .text__content h6, .text__content p, .text__content blockquote, .text__content img {
+.text__content h1, .text__content h2, .text__content h3, .text__content h4, .text__content h5, .text__content h6, .text__content p, .text__content blockquote, .text__content img, .text__content b {
   margin-bottom: 20px;
 }
 .text__content h1 {
@@ -2061,7 +2067,12 @@ u {
   color: rgb(70, 63, 139);
 }
 .text__content b {
+  display: inline-block;
   font-weight: 700;
+  line-height: 1.6;
+}
+.text__content p b {
+  margin-bottom: 0;
 }
 .text__content em {
   font-style: italic;

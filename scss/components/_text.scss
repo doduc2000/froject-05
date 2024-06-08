@@ -9,7 +9,7 @@
         color: var(--text-color);
     }
 
-    h1, h2, h3, h4, h5, h6, p, blockquote, img{
+    h1, h2, h3, h4, h5, h6, p, blockquote, img, b{
         margin-bottom: 20px;
     }
 
@@ -55,8 +55,15 @@
     }
 
     b{
+        display: inline-block;
         font-weight: 700;
+        line-height: 1.6;
     }
+
+    p b{
+        margin-bottom: 0;
+    }
+
 
     em{
         font-style: italic;
