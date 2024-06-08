@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Đăng ký tài khoản | MD Perfumer</title>
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- font -->
+
+        <link rel="stylesheet" href="./assets/lato/stylesheet.css" />
+
+        <!-- scrips -->
+
+        <script src="./assets/js/scrip.js"></script>
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+
+        <main>
+            <div class="auth">
+                <div class="auth__content">
+                    <h1 class="home__heading auth__heading">
+                        Đăng ký tài khoản
+                    </h1>
+
+                    <form class="form auth__form" action="">
+                        <div class="form__group">
+                            <input
+                                placeholder="Tên đăng nhập"
+                                type="text"
+                                class="form__input"
+                            />
+                        </div>
+
+                        <div class="form__group">
+                            <input
+                                placeholder="Mật khẩu"
+                                type="password"
+                                class="form__input"
+                            />
+                        </div>
+
+                        <div class="form__group">
+                            <input
+                                placeholder="Nhập lại mật khẩu"
+                                type="text"
+                                class="form__input"
+                            />
+                        </div>
+                    </form>
+
+                    <a href="./sign-in.html" class="btn btn__wrap auth__btn"
+                        >Đăng Ký</a
+                    >
+
+                    <p class="auth__desc">Hoặc đăng nhập bằng</p>
+
+                    <div class="auth__row">
+                        <a href="./index.html" class="btn auth__btn-signin">
+                            <img
+                                src="./assets/icon/face.svg"
+                                alt=""
+                                class="auth__icon"
+                            />
+                            <span>Facebook</span>
+                        </a>
+                        <a href="./index.html" class="btn auth__btn-signin">
+                            <img
+                                src="./assets/icon/google.svg"
+                                alt=""
+                                class="auth__icon"
+                            />
+                            <span>Google</span>
+                        </a>
+                    </div>
+
+                    <div class="auth__row">
+                        <p>
+                            Bạn đã có tài khoản. Đến trang
+                            <a class="auth__link" href="./sign-in.html"
+                                >Đăng Nhập.</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+
+        <!-- modal -->
+
+        <div id="modal-header" class="modal hide">
+            <div class="modal__inner">
+                <div class="modal__search-header">
+                    <input
+                        type="text"
+                        class="modal__search-input"
+                        name=""
+                        id=""
+                        placeholder="Nhập sản phẩm bạn muốn tìm kiếm..."
+                    />
+
+                    <div class="modal__search-icon-wrap">
+                        <img
+                            src="./assets/icon/search.svg"
+                            alt=""
+                            class="modal__search-icon icon"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay js-toggle" toggle-target="#modal-header"></div>
+        </div>
+    </body>
+</html>

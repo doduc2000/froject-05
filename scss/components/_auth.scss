@@ -1,0 +1,96 @@
+@use "../abstracts";
+
+.auth{
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include abstracts.screen(md){
+        margin: 60px;
+    }
+
+    @include abstracts.screen(sm){
+        margin: 60px 15px;
+    }
+   
+
+    &__content{
+        width: 500px;
+        
+        @include abstracts.screen(md){
+            width: 100%;
+        }
+    }
+
+    &__heading{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__form-row{
+        justify-content: space-between;
+    }
+
+    &__input-wrap, &__form-row, &__row{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__row{
+        justify-content: center;
+
+        &:last-of-type{
+            margin-top: 20px;
+        }
+    }
+
+    &__btn{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        color: #fff;
+
+        &-signin{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #3b5998;
+            padding: 10px 0;
+            width: 100px;
+
+            &:last-child{
+                background-color: #e14b33;
+            }
+
+            & span{
+                color: #fff;
+            }
+        }
+    }
+
+    &__link{
+        color: #3b5998 ;
+
+         &:hover{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+         }
+    }
+
+    &__desc{
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 30px 0px 10px 0;
+    }
+
+    &__icon{
+        width: 12px;
+        height: 12px;
+    }
+}
