@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thông tin liên hệ | MD Perfumer</title>
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- font -->
+
+        <link rel="stylesheet" href="./assets/lato/stylesheet.css" />
+
+        <!-- scrips -->
+
+        <script src="./assets/js/scrip.js"></script>
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+
+        <main class="contact">
+            <div class="container">
+                <div class="contact__inner">
+                    <h1 class="home__heading">Thông tin liên hệ</h1>
+
+                    <div class="contact__body">
+                        <div class="row gy-5">
+                            <div class="col-6 col-lg-12">
+                                <h2 class="contact__heading">MD Perfumer</h2>
+                                <p class="contact__desc">
+                                    MD Perfumer được thành lập vào năm 2017,
+                                    hiện đang là nhà phân phối chính hãng của
+                                    các nhãn hàng lớn như Versace, Creed,
+                                    Salvatore Ferragamo, Carolina Herrera, Jean
+                                    Paul Gaultier v..v Tại MD Perfumer, tất cả
+                                    sản phẩm đều là hàng chính hãng và khách
+                                    hàng sẽ được hậu mãi ở mức cao nhất.
+                                </p>
+
+                                <h2 class="contact__heading">CỬA HÀNG CHÍNH</h2>
+
+                                <div class="contact__row">
+                                    <img
+                                        src="./assets/icon/address.svg"
+                                        alt=""
+                                        class="contact__icon"
+                                    />
+                                    <p class="contact__desc">
+                                        Thành phố Trà Vinh, Trà Vinh
+                                    </p>
+                                </div>
+
+                                <div class="contact__row">
+                                    <img
+                                        src="./assets/icon/phone.svg"
+                                        alt=""
+                                        class="contact__icon"
+                                    />
+                                    <a
+                                        class="contact__desc"
+                                        href="tel:+845955656655"
+                                        >+845955656655</a
+                                    >
+                                </div>
+
+                                <div class="contact__row">
+                                    <img
+                                        src="./assets/icon/mail.svg"
+                                        alt=""
+                                        class="contact__icon"
+                                    />
+
+                                    <a class="contact__desc" href="mailto:"
+                                        >abc@gmail.com</a
+                                    >
+                                </div>
+
+                                <div class="contact__separate"></div>
+
+                                <h2 class="contact__heading">
+                                    GỬI TIN NHẮN CHO CHÚNG TÔI
+                                </h2>
+
+                                <form class="from contact__form">
+                                    <div class="form__group">
+                                        <input
+                                            class="form__input"
+                                            type="text"
+                                            placeholder="Tên của bạn"
+                                        />
+                                    </div>
+
+                                    <div class="form__group">
+                                        <input
+                                            class="form__input"
+                                            type="email"
+                                            placeholder="Email của bạn"
+                                        />
+                                    </div>
+
+                                    <div class="form__group">
+                                        <textarea
+                                            class="form__input"
+                                            placeholder="Nhập nội dung"
+                                            name=""
+                                            id=""
+                                        ></textarea>
+                                    </div>
+
+                                    <button class="btn btn__wrap">Gửi</button>
+                                </form>
+                            </div>
+                            <div class="col-6 col-lg-12">
+                                <div class="contact__map">
+                                    <img
+                                        src="./assets/img/contact/map.jpg"
+                                        alt=""
+                                        class="contact__map-img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+
+        <!-- modal -->
+
+        <div id="modal-header" class="modal hide">
+            <div class="modal__inner">
+                <div class="modal__search-header">
+                    <input
+                        type="text"
+                        class="modal__search-input"
+                        name=""
+                        id=""
+                        placeholder="Nhập sản phẩm bạn muốn tìm kiếm..."
+                    />
+
+                    <div class="modal__search-icon-wrap">
+                        <img
+                            src="./assets/icon/search.svg"
+                            alt=""
+                            class="modal__search-icon icon"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay js-toggle" toggle-target="#modal-header"></div>
+        </div>
+    </body>
+</html>
