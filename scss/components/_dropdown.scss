@@ -110,10 +110,6 @@
             display: block;
         }
     }
-  
-
-   
-
     
     &__form-btn{
         padding: 5px 10px;
@@ -123,6 +119,23 @@
         margin-top: 20px;
         display: flex;
         justify-content: flex-end;
+    }
+
+    &__user{
+        top: 65px;
+        left: -65px;
+    }
+
+    &__desc{
+        display: block;
+        white-space: nowrap;
+        padding: 10px 0;
+       
+
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
     }
 }
 

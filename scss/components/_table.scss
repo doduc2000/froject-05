@@ -1,0 +1,20 @@
+.table{
+    margin-top: 50px;
+    border: 1px solid #787878;
+
+    &__item{
+        border: 1px solid #787878;
+        padding: 10px;
+        line-height: 1.6;
+        white-space: nowrap;
+    }
+
+    &__row:first-child{
+        background-color: #acacac;
+    }
+
+    &__row:nth-child(2) td{
+        text-align: center;
+        display: none;
+    }
+}

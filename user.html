@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Giới thiệu sản phẩm | MD Perfumer</title>
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- font -->
+
+        <link rel="stylesheet" href="./assets/lato/stylesheet.css" />
+
+        <!-- scrips -->
+
+        <script src="./assets/js/scrip.js"></script>
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+
+        <main>
+            <div class="container">
+                <div class="user__inner">
+                    <!-- <h2 class="home__heading user__heading">
+                        Bạn Chưa Đăng Nhập.
+                        <a class="auth__link" href="./sign-in.html"
+                            >Đến Trang Đăng Nhập</a
+                        >
+                    </h2> -->
+
+                    <h2 class="home__heading">TRANG KHÁCH HÀNG</h2>
+
+                    <table class="user__table table">
+                        <tr class="user__table-row table__row">
+                            <th class="table__item user__table-item">
+                                Đơn hàng
+                            </th>
+                            <th class="table__item user__table-item">Ngày</th>
+                            <th class="table__item user__table-item">
+                                Địa chỉ
+                            </th>
+                            <th class="table__item user__table-item">
+                                Giá trị đơn hàng
+                            </th>
+                            <th class="table__item user__table-item">
+                                Tình trạng thanh toán
+                            </th>
+                            <th class="table__item user__table-item">
+                                Trạng thái vận chuyển
+                            </th>
+                        </tr>
+                        <tr class="user__table-row table__row">
+                            <td
+                                class="table__item user__table-item"
+                                colspan="6"
+                            >
+                                Không có đơn hàng nào.
+                            </td>
+                        </tr>
+                        <tr class="user__table-row table__row">
+                            <td class="table__item user__table-item">
+                                Giorgio Armani Acqua di Gio Pour Homme Parfum
+                            </td>
+                            <td class="table__item user__table-item">10/9</td>
+                            <td class="table__item user__table-item">
+                                Xóm 1, Quỳnh Hồng, Quỳnh Phụ, Thái Bình
+                            </td>
+                            <td class="table__item user__table-item">
+                                3.000.000
+                            </td>
+                            <td class="table__item user__table-item">
+                                Thanh toán khi nhận hàng
+                            </td>
+                            <td class="table__item user__table-item">
+                                Đang vận chuyển
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+
+        <!-- modal -->
+
+        <div id="modal-header" class="modal hide">
+            <div class="modal__inner">
+                <div class="modal__search-header">
+                    <input
+                        type="text"
+                        class="modal__search-input"
+                        name=""
+                        id=""
+                        placeholder="Nhập sản phẩm bạn muốn tìm kiếm..."
+                    />
+
+                    <div class="modal__search-icon-wrap">
+                        <img
+                            src="./assets/icon/search.svg"
+                            alt=""
+                            class="modal__search-icon icon"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay js-toggle" toggle-target="#modal-header"></div>
+        </div>
+    </body>
+</html>

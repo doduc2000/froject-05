@@ -80,6 +80,9 @@
                         >Thông tin liên hệ</a
                     >
                 </li>
+                <li class="nav__item d-none">
+                    <a class="nav__link" href="./sign-up.html">Đăng Xuất</a>
+                </li>
                 <li class="nav__item">
                     <a class="nav__link" href="./sign-up.html"
                         >Đăng ký/Đăng nhập</a
@@ -106,12 +109,24 @@
             </button>
 
             <a href="#!" class="d-sm-none">
-                <div class="header__action-icon-wrap">
+                <div class="header__action-icon-wrap d-sm-none">
                     <img
                         src="./assets/icon/user.svg"
                         alt=""
                         class="header__action-icon"
                     />
+
+                    <div class="dropdown hide">
+                        <!-- dropdown-inner -->
+                        <div class="dropdown__inner-price dropdown__user">
+                            <a href="./user.html" class="dropdown__desc"
+                                >Trang cá nhân</a
+                            >
+                            <a href="./sign-in.html" class="dropdown__desc"
+                                >Đăng Xuất</a
+                            >
+                        </div>
+                    </div>
                 </div>
             </a>
 

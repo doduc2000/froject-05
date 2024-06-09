@@ -1315,6 +1315,10 @@ u {
   padding: 15px;
   position: relative;
 }
+.header__action-icon-wrap:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
 .header__action-icon-quantity {
   display: none;
   position: absolute;
@@ -1992,6 +1996,14 @@ u {
   object-fit: cover;
 }
 
+.user__inner {
+  padding: 60px 0;
+  overflow-x: auto;
+}
+.user__heading {
+  text-align: center;
+}
+
 .modal {
   position: fixed;
   inset: 0;
@@ -2543,6 +2555,19 @@ u {
   display: flex;
   justify-content: flex-end;
 }
+.dropdown__user {
+  top: 65px;
+  left: -65px;
+}
+.dropdown__desc {
+  display: block;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+.dropdown__desc:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 .trademark__list {
   position: relative;
@@ -2863,6 +2888,24 @@ u {
 .auth__icon {
   width: 12px;
   height: 12px;
+}
+
+.table {
+  margin-top: 50px;
+  border: 1px solid #787878;
+}
+.table__item {
+  border: 1px solid #787878;
+  padding: 10px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.table__row:first-child {
+  background-color: #acacac;
+}
+.table__row:nth-child(2) td {
+  text-align: center;
+  display: none;
 }
 
 html {
